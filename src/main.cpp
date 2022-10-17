@@ -7,16 +7,12 @@ const int trig = 5;
 #define CM_TO_INCH 0.393701
 long Duration;
 float distanceCm;
-
 int tempDist;
 
 Servo  pitch, yaw; 
-
 int pos = 0;   
-
 int pitchPin = 17;
 int YawPin = 16;
-
 int homepos;
 
 void home(){
