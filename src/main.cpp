@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <ESP32Servo.h>
 
-const int echo = 4;
-const int trig = 5;
+const int echo = 5;
+const int trig = 4;
 #define SOUND_SPEED 0.034 //-cm/uS
 #define CM_TO_INCH 0.393701
 long Duration;
@@ -10,7 +10,7 @@ long Duration2;
 
 float distanceCm;
 float tempDist;
-float deadband = 2;
+float deadband = 1;
 
 Servo pitch, yaw;
 int pos = 0;
@@ -56,7 +56,7 @@ void moveRandom(){
     int rndm2 = random(50, 120);
     pitch.write(rndm);
     yaw.write(rndm2);
-    delay(500);
+    delay(100);
 }
 
 
@@ -88,7 +88,7 @@ void loop()
   {
    moveRandom();
    readDist();
-   delay(500);
+   delay(100);
   }
   readDist2();
   Serial.print("Difference: ");
