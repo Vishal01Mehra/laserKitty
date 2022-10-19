@@ -8,9 +8,9 @@ const int trig = 4;
 long Duration;
 long Duration2;
 
-float distanceCm;
+float distanceCm;   
 float tempDist;
-float deadband = 1;
+float deadband = 1.5;
 
 Servo pitch, yaw;
 int pos = 0;
@@ -52,8 +52,8 @@ void readDist2()
 }
 
 void moveRandom(){
-    int rndm = random(50, 120);
-    int rndm2 = random(50, 120);
+    int rndm = random(40, 120);
+    int rndm2 = random(0, 120);
     pitch.write(rndm);
     yaw.write(rndm2);
     delay(100);
@@ -88,7 +88,7 @@ void loop()
   {
    moveRandom();
    readDist();
-   delay(100);
+   delay(500);
   }
   readDist2();
   Serial.print("Difference: ");
