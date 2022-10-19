@@ -5,8 +5,10 @@ LaserKitty is an interesting project for your pet animals especially for cats. I
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## STL Credit
+[blistik](https://www.thingiverse.com/thing:1401116)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## STL Credit
-[blistik](https://www.thingiverse.com/thing:1401116)
+
